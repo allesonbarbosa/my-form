@@ -1,0 +1,125 @@
+<!-- REQUISITOS DO DESAFIO
+
+Utilizando o formulário feito no módulo 3 realizar:
+
+[*] Retirar todas as tags <br> e manter o layout sem alterações visuais;
+[*] Tirar o fieldset e manter o layout sem alterações visuais;
+
+    - Ao passar o mouse sobre os botões de Limpar e Enviar Dados:
+[*] Trocar a cor do fundo;
+[*] Aumentar o botão;
+[*] Trocar a cor da letra;
+[*] Trocar a cor da borda;
+[*] O cursor terá que ser o da "mãozinha";
+
+[*] Alterar cores da borda de todos os inputs;
+[*] Alterar a fonte do projeto para 'Nunito';
+[*] Alterar o background do formulário;
+[*] Alterar a cor e tamanho dos textos dos labels:
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <title>Desafio - Formulário</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+            <div class="label">
+                <label>
+                    <b>Nome:</b>
+                    <input type="text" name="nome" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Email:</b>
+                    <input type="email" name="email" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Idade:</b>
+                    <input type="number" name="idade" required min="12" step="1">
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Data de Nascimento:</b>
+                    <input type="date" name="data-nascimento" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Onde você possui conta:</b>
+                    <label>
+                        <input type="checkbox" name="instagram">
+                        <p>Instagram</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="facebook">
+                        <p>Facebook</p>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="youtube">
+                        <p>Youtube</p>
+                    </label>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Sexo:</b>
+                    <input type="radio" name="sexo">
+                    <p>Masculino</p>
+                    <input type="radio" name="sexo">
+                    <p>Feminino</p>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b id="title-color-eye">Cor dos olhos:</b>
+                    <input type="color" name="cor-olhos">
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Biografia:</b>
+                    <textarea cols="30" rows="5" required></textarea>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Foto do perfil:</b>
+                    <input type="file" accept="image/*">
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Telefone:</b>
+                    <input type="tel" name="telefone" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Link do perfil do Facebook:</b>
+                    <input type="url" name="link-facebook" required>
+                </label>
+            </div>
+            <div class="label">
+                <label>
+                    <b>Senha:</b>
+                    <input type="password" name="senha" minlength="6" maxlength="8" required>
+                </label>
+            </div>
+            <button type="reset" name="reset">Limpar</button>
+            <button type="submit" name="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
