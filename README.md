@@ -1,6 +1,6 @@
 # My Form
 
-<img src=./assets/form_print.jpg alt="form-image">
+<img src=./assets/form_print.JPG alt="form-image">
 
 > This is my first form using HTML and CSS.
 
